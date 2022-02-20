@@ -1,7 +1,9 @@
+/*
+ * Import Head from "next/head";
+ * import Image from "next/image";
+ */
+import { Anchor, Box, Grommet, Header, Nav } from "grommet";
 import type { NextPage } from "next";
-// import Head from "next/head";
-// import Image from "next/image";
-import { Grommet, Nav, Header, Anchor, Box } from "grommet";
 
 const theme = {
   global: {
@@ -10,38 +12,34 @@ const theme = {
     },
     font: {
       family: "Roboto",
-      size: "18px",
       height: "20px",
+      size: "18px",
     },
   },
 };
 
-const Home: NextPage = () => {
-  return (
-    <Grommet theme={theme}>
-      <Header
-        background="dark-1"
-        pad="small"
-        tag="header"
-        direction="row"
-        align="center"
-        justify="between"
-        elevation="medium"
-        style={{ zIndex: "1" }}
-      >
-        <Box direction="row" align="center" gap="small">
-          <Anchor color="white" href="https://github.com/chrisphillers">
-            Hi
-          </Anchor>
-        </Box>
-        {/* <Nav direction="row">Nav</Nav> */}
-      </Header>
-
-      <main>
-        <h1>There</h1>
-      </main>
-    </Grommet>
-  );
-};
+const Home: NextPage = () => (
+  <Grommet theme={theme}>
+    <Header
+      align="center"
+      background="dark-1"
+      direction="row"
+      elevation="medium"
+      justify="between"
+      pad="small"
+      style={{ zIndex: "1" }}
+      tag="header">
+      <Box align="center" direction="row" gap="small">
+        <Anchor color="white" href="https://github.com/chrisphillers">
+          Hi
+        </Anchor>
+      </Box>
+      {/* <Nav direction="row">Nav</Nav> */}
+    </Header>
+    <main>
+      <h1>There</h1>
+    </main>
+  </Grommet>
+);
 
 export default Home;
