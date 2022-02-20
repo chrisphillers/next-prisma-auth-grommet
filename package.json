@@ -1,0 +1,28 @@
+{
+  "name": "hitlist",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "grommet": "^2.20.1",
+    "next": "12.1.0",
+    "next-auth": "^4.2.1",
+    "polished": "^4.1.4",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.18",
+    "@types/react": "17.0.39",
+    "eslint": "8.9.0",
+    "eslint-config-next": "12.1.0",
+    "prisma": "^3.9.2",
+    "typescript": "4.5.5"
+  }
+}
